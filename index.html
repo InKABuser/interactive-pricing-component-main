@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="main.css">
+  <script defer src="index.js"></script>
+
+</head>
+<body>
+  <header class="header">
+    <h2>Simple, traffic-based pricing</h2>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+  <article>
+    <div class="article-main">
+      <!-- <div class="dynamic-text"> -->
+        <p class="views"><span id="views"></span>Pageviews</p>
+        <p class="cash"><span id="price"></span>/month</p>
+      <!-- </div> -->
+      <label for="slider" class="slider-label">
+        <input id="slider" class="slider" min="0" max="4"  type="range">
+      </label>
+      <div class="switch-label">
+          <span class="toggle-text">Monthly Billing</span> 
+        <label for="toggle" class="toggle-label">
+          <input type="checkbox" id="toggle" class="toggle">
+          <span class="switch-slider round"/>
+        </label>
+          <span class="toggle-text">Yearly Billing <span class="discount">-25% <span class="hide">discount</span></span></span> 
+      </div>
+      <footer>
+        <ul class="footer-list">
+          <li class="footer-list-item"><img src="./images/icon-check.svg" alt="check">websites</li>
+          <li class="footer-list-item"><img src="./images/icon-check.svg" alt="check">100% data ownership</li>
+          <li class="footer-list-item"><img src="./images/icon-check.svg" alt="check">Email reports</li>
+        </ul>
+        <div class="footer-button">
+          <button class="trial-button">Start my trial</button>
+        </div>
+        
+      </footer>
+    </div>    
+
+  </article>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">InKABuser</a>.
+  </div>
+</body>
+</html>
